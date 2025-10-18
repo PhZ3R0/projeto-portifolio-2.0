@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="src/output.css">
-    <script src="https://kit.fontawesome.com/fb4e74f99e.js" crossorigin="anonymous"></script>
-    <style>
-        nav> ul > li {
-            display: inline-block;
-        }
-        span {
-            font-size: 20em;
-        }
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/fb4e74f99e.js"
+      crossorigin="anonymous"
+    ></script>
 
-    </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="menu" class="text-right ">
-            <ul class="p-2 bg-blue-500 text-2xl [*_i]:text-white">
-                <li><a class="link " href="#detalhes"><i class="fa-solid fa-house"></i></a></li>
-                <li><a class="link" href="#skills"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a class="link" href="#formacao"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a class="link" href="#projetos"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a class="link" href="" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
-            </ul>
-        </nav>
+      <!-- menu icons -->
+      <nav id="menu" class="text-right">
+        <ul class="p-2 bg-blue-500 text-2xl text-white flex justify-around">
+          <li>
+            <a class="link" href="#skills"
+              ><i class=" fa-solid fa-brain"></i
+            ></a>
+          </li>
+          <li>
+            <a class="link" href="#formacao"
+              ><i class="fa-solid fa-graduation-cap"></i
+            ></a>
+          </li>
+          <li>
+            <a class="link" href="#projetos"
+              ><i class="fa-solid fa-trowel-bricks"></i
+            ></a>
+          </li>
+          <li>
+            <a class="link" href="" id="botao-tema"
+              ><i class="fa-solid fa-moon"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <main>
+      <section id="ficha" class="rounded-full">
+        <img src="images/1656383051408.jpeg" class="rounded-full" alt="" />
+      </section>
+    </main>
+  </body>
 </html>
