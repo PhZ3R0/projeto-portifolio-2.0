@@ -15,7 +15,7 @@
     <header class="sticky top-0">
       <!-- menu icons -->
       <nav id="menu" class="text-right">
-        <ul class="p-2 bg-blue-500 text-2xl text-white flex justify-around list-none
+        <ul class="p-2 bg-blue-500 text-xl text-white flex justify-around list-none
         [&_a]:hover:text-[#0077ff]
         [&_a]:p-2
         [&_a]:px-2.5
@@ -60,13 +60,21 @@
       [&_section]:pl-4 [&_section]:pr-4
       
       grid
+      
       grid-rows-4
       grid-cols-1
+      lg:grid-cols-[1fr_2fr]
       gap-[120px]
+      lg:gap-[40px]
+      lg:[&_section]:p-[20px]
       "
     >
 
-      <section id="home" class="rounded-full">
+      <section id="home" class="rounded-full 
+      sticky 
+      col-1
+      top-[65px]
+      " >
         <img
           src="images/1656383051408.jpeg"
           class="rounded-full w-[200px] h-[200px] m-auto mt-[20px] mb-[20px] outline-blue-500 border-5 outline-5 border-white"
@@ -75,7 +83,7 @@
         <h1 class="text-blue-500 text-3xl font-bold text-center">
           Pablo Henrique
         </h1>
-        <p class="text-xl text-center">
+        <p class="text-lg text-center">
           Profissional em início de carreira com sólida base em lógica de
           programação e conhecimento prático em linguagens como HTML, CSS,
           JavaScript e Python. Inglês avançado (nível C2). Proativo, autodidata
@@ -93,7 +101,7 @@
       </section>
 
 
-      <section id="skills">
+      <section id="skills" class="col-2 row-1">
         <h1 class=""><i class="fa-solid fa-brain"></i> Minhas Skills</h1>
         <!-- progress bar -->
         <h2 class="text-center m-[10px]">HTML5 e CSS3</h2>
@@ -152,7 +160,7 @@
       </section>
 
 
-      <section id="formacao">
+      <section id="formacao" class="col-2 row-4>
         <h1><i class="fa-solid fa-graduation-cap"></i> Formação</h1>
         <article
           class="border-l-5 border-blue-500 rounded-2xl pl-4 mt-10 hover:border-l-11 hover:border-blue-600 duration-200 cursor-pointer [&_h2]:text-blue-500"
@@ -166,7 +174,7 @@
       </section>
 
       
-      <section id="projetos" class="[&_li]:text-center mb-100">
+      <section id="projetos" class="[&_li]:text-center mb-100 col-2">
         <h1><i class="fa-solid fa-trowel-bricks"></i> Projetos</h1>
         <ul
           class="
