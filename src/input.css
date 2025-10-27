@@ -1,4 +1,6 @@
+@import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --fundo-principal: #f5f5f5;

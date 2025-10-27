@@ -21,3 +21,17 @@ navLinks.forEach(link => {
         }
     })
 })
+
+
+
+let darkmode = true
+let botao = document.getElementById('botao-tema')
+function mode () {
+    if (darkmode == true) {
+        botao.innerHTML = '<i class="fa-solid fa-sun"></i>'
+        darkmode = false
+    }    else {
+        botao.innerHTML = '<i class="fa-solid fa-moon"></i>'
+        darkmode = true
+    }
+}
