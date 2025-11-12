@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" className="">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link" rel="stylesheet" href="src/index.css" />
-    <link rel="stylesheet" href="src/output.css">
-
+    <link rel="stylesheet" href="output.css"/>
     <script
       src="https://kit.fontawesome.com/fb4e74f99e.js"
       crossorigin="anonymous"
     ></script>
-    
   </head>
   <body class="scroll-smooth dark:bg-[#222222] bg-white">
     <header class="sticky top-0">
       <!-- menu icons -->
       <nav id="menu" class="text-right">
-        <ul class="p-2 bg-blue-500 text-xl text-white flex justify-around list-none
-        [&_a]:hover:text-[#0077ff]
-        [&_a]:p-2
-        [&_a]:px-2.5
-        [&_a]:hover:bg-[#66bbff]
-        [&_a]:duration-200
-        [&_a]:rounded-full
-        [&_li]:p-1
-
-        ">
+        <ul
+          class="p-2 bg-blue-500 text-xl text-white flex justify-around list-none [&_a]:hover:text-[#0077ff] [&_a]:p-2 [&_a]:px-2.5 [&_a]:hover:bg-[#66bbff] [&_a]:duration-200 [&_a]:rounded-full [&_li]:p-1"
+        >
           <li>
             <a class="link" href="#home"> <i class="fa-solid fa-home"></i></a>
           </li>
@@ -54,40 +44,14 @@
       </nav>
     </header>
     <main
-      class="
-      [&_h1]:text-3xl
-      [&_h1]:font-bold 
-      [&_h1]:text-center 
-      [&_h1]:text-blue-500 
-      [&_section]:pl-4 [&_section]:pr-4
-      
-      grid
-
-      grid-flow-row
-      md:grid-flow-col
-      grid-cols-1
-      md:grid-cols-[1fr_2fr]
-
-      gap-35
-      md:gap-10
-
-      text-black
-      dark:text-white
-
-      "
+      class="[&_h1]:text-3xl [&_h1]:font-bold [&_h1]:text-center [&_h1]:text-blue-500 [&_section]:pl-4 [&_section]:pr-4 grid grid-flow-row md:grid-flow-col grid-cols-1 md:grid-cols-[1fr_2fr] gap-35 md:gap-10 text-black dark:text-white"
     >
-
-      <section id="home" class="rounded-full 
-      md:sticky 
-      static
-
-      row-1
-      
-      md:col-start-1
-      md:top-[65px]
-      " >
+      <section
+        id="home"
+        class="rounded-full md:sticky static row-1 md:col-start-1 md:top-[65px]"
+      >
         <img
-          src="images/1656383051408.jpeg"
+          src="../images/1656383051408.jpeg"
           class="rounded-full w-[180px] h-[180px] m-auto mt-[20px] mb-[20px] outline-blue-500 border-5 outline-5 border-white"
           alt=""
         />
@@ -111,8 +75,7 @@
         </ul>
       </section>
 
-
-      <section id="skills" class=" col-start-1 md:col-start-2 pt-4">
+      <section id="skills" class="col-start-1 md:col-start-2 pt-4">
         <h1 class=""><i class="fa-solid fa-brain"></i> Minhas Skills</h1>
         <!-- progress bar -->
         <h2 class="text-center m-[10px]">HTML5 e CSS3</h2>
@@ -170,7 +133,6 @@
         </div>
       </section>
 
-
       <section id="formacao" class="col-start-1 md:col-start-2">
         <h1><i class="fa-solid fa-graduation-cap"></i> Formação</h1>
         <article
@@ -184,23 +146,16 @@
         </article>
       </section>
 
-      
-      <section id="projetos" class="[&_li]:text-center mb-100 col-start-1 md:col-start-2">
+      <section
+        id="projetos"
+        class="[&_li]:text-center mb-100 col-start-1 md:col-start-2"
+      >
         <h1><i class="fa-solid fa-trowel-bricks"></i> Projetos</h1>
         <ul
-          class="
-          [&_i]:text-9xl
-          grid grid-cols-2 grid-rows-1 
-          [&_li]:hover:border-2 
-          [&_li]:border-blue-400 
-          [&_li]:duration-100 
-          [&_li]:hover:border-blue-600 
-          [&_li]:mt-4 [&_li]:ml-4
-          
-          "
+          class="[&_i]:text-9xl grid grid-cols-2 grid-rows-1 [&_li]:hover:border-2 [&_li]:border-blue-400 [&_li]:duration-100 [&_li]:hover:border-blue-600 [&_li]:mt-4 [&_li]:ml-4"
         >
           <li>
-            <a href="html5ecss.html">
+            <a href="../html5ecss.html">
               <i class="fa-regular fa-folder"></i>
               <p>HTML5 e CSS3</p>
             </a>
@@ -213,7 +168,7 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
-    <script src="tailwind.config.js"></script>
+    <script src="../script.js"></script>
+    <script src="../tailwind.config.js"></script>
   </body>
 </html>
