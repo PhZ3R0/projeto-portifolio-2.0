@@ -22,19 +22,23 @@ navLinks.forEach((link) => {
   });
 });
 
-let darkmode = true;
-let botao = document.getElementById("botao-tema");
-function mode() {
-  if (darkmode == true) {
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    darkmode = false;
-    document.documentElement.classList.toggle("dark");
+// trocando de tema
+
+let botaoTema = document.getElementById("botao-tema");
+
+function iconeTema(type) {
+  if (type == true) {
+    document.documentElement.classList.add("dark");
+    botaoTema.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
+    document.documentElement.classList.remove("dark");
     botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
-    darkmode = true;
-    document.documentElement.classList.toggle("dark");
-  }
-  if (darkmode == true) {
-    document.documentElement.classList.add('dark')
   }
 }
+
+botaoTema.addEventListener("click", () => {
+  const isdark = document.documentElement.toggle("dark");
+  iconeTema(isdark)
+  localStorage.setItem('theme', isdark ? 'dark' : 'light')
+  console.log('click')
+});
