@@ -30,8 +30,10 @@ function mode () {
     if (darkmode == true) {
         botao.innerHTML = '<i class="fa-solid fa-sun"></i>'
         darkmode = false
+        console.log(darkmode)
     }    else {
         botao.innerHTML = '<i class="fa-solid fa-moon"></i>'
         darkmode = true
+        console.log
     }
 }
