@@ -24,21 +24,24 @@ navLinks.forEach((link) => {
 
 // trocando de tema
 
-let botaoTema = document.getElementById("botao-tema");
+const botao= document.getElementById("botao-tema");
 
-function iconeTema(type) {
-  if (type == true) {
+const temasalvo = localStorage.getItem('tema')
+tema(temasalvo === 'dark')
+
+// mudar tema e trocar o icone
+function tema(tipo) {
+  if (tipo == true) {
     document.documentElement.classList.add("dark");
-    botaoTema.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
   } else {
     document.documentElement.classList.remove("dark");
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
   }
 }
 
-botaoTema.addEventListener("click", () => {
-  const isdark = document.documentElement.toggle("dark");
-  iconeTema(isdark)
-  localStorage.setItem('theme', isdark ? 'dark' : 'light')
-  console.log('click')
+botao.addEventListener("click", () => {
+  const isdark = document.documentElement.classList.toggle('dark')
+  tema(isdark)
+  localStorage.setItem('tema', isdark ? 'dark' : 'light')
 });
