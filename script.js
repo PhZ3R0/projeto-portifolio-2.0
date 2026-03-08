@@ -23,25 +23,31 @@ navLinks.forEach((link) => {
 });
 
 // trocando de tema
+console.log(localStorage.getItem("tema"));
+const botao = document.getElementById("botao-tema");
 
-const botao= document.getElementById("botao-tema");
-
-const temasalvo = localStorage.getItem('tema')
-tema(temasalvo === 'dark')
+const temasalvo = localStorage.getItem("tema");
+tema();
+// tema(temasalvo === "dark");
+// check qual tema está no momento
 
 // mudar tema e trocar o icone
-function tema(tipo) {
-  if (tipo == true) {
+function tema() {
+  if (localStorage.getItem("tema") == "dark") {
     document.documentElement.classList.add("dark");
     botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    localStorage.setItem("tema", "dark");
   } else {
     document.documentElement.classList.remove("dark");
     botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    localStorage.setItem("tema", "light");
   }
 }
 
 botao.addEventListener("click", () => {
-  const isdark = document.documentElement.classList.toggle('dark')
-  tema(isdark)
-  localStorage.setItem('tema', isdark ? 'dark' : 'light')
+  localStorage.setItem(
+    "tema",
+    localStorage.getItem("tema") == "dark" ? "light" : "dark",
+  );
+  tema();
 });
